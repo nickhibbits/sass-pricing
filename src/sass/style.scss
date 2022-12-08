@@ -102,6 +102,10 @@ body {
     font-size: $fs-800;
     font-weight: $fw-700;
 
+    .inverted & {
+      color: $color-neutral-100;
+    }
+
     span {
       font-weight: $fw-400;
       font-size: $fs-600;
@@ -121,6 +125,12 @@ body {
   .inverted & {
     background-color: $color-neutral-100;
     color: $color-neutral-900;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgb($color-neutral-900, 0.7);
+    color: $color-neutral-100;
   }
 
   justify-self: center;
